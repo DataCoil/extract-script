@@ -3,6 +3,7 @@
 scripts to extract data from compressed packages.
 
 inspired by:
+
 ```bash
 function extract() {
     if [ -f $1 ];
@@ -25,4 +26,10 @@ function extract() {
         echo "'$1' is not a valid file"
     fi
 }
+```
+
+based on:
+
+```bash
+docker run --rm -it -p 8080:8080 -v$(PWD):/work -w /work --name ubunutu_$(date "+%d%H%M") ubuntu:20.04
 ```
